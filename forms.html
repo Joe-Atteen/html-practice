@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>STELLATE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: 'Poppins', sans-serif;
+            margin-left: 35%;
+            margin-right: 35%;
+            border: 1px solid rgb(153, 146, 146);
+            border-radius: 20px;
+        }
+
+        h1{
+            text-align: center;
+            padding-top: 10px;
+            margin-top: 10px;
+            background-color: rgb(220, 229, 248);
+        }
+
+        .content{
+            padding-bottom: 40px;
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+
+        .label{
+            color: rgb(13, 96, 102);
+            font-size: large;
+        }
+
+        .input{
+            border: 1px solid black;
+            width: 250px;
+            height: 25px;
+        }
+
+        .radio{
+            padding-right: 10px;
+            margin-left: 20px;
+        }
+
+        #button{
+            margin-left: 80px;
+            width: 90px;
+            height: 30px;
+            font-size: large;
+            background-color: rgb(102, 145, 238);
+        }
+
+        #gender{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>SIGN UP FORM</h1>
+        <div class="content">
+            <label class="label">First Name:</label><br>
+            <input class="input" type="text" name="firstname">
+            <br><br>
+            <label class="label">Last Name:</label><br>
+            <input class="input" type="text" name="lastname">
+            <br><br>
+            <label class="label">Email:</label><br>
+            <input class="input" type="text" name="email">
+            <br><br>
+            <label class="label">Phone:</label><br>
+            <input class="input" type="number" name="phone">
+            <br><br>
+            <label class="label" id="gender">Gender:</label>
+            <div class="radio">
+                <input type="radio" name="gender" value="male">Male
+                <input type="radio" name="gender" value="female">Female
+                <input type="radio" name="gender" value="other">Other
+            <br><br>
+            </div>
+            <input id="button" type="submit" value="Sign Up">
+            <br>
+        </div>
+    </form>
+</body>
+</html>
